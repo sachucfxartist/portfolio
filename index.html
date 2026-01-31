@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/style.css">
+  </head>
+  <body>
+    <!-- Cursor Follower -->
+    <div class="cursor-follower" id="cursor"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo">ANIMA</div>
+      <div class="links">
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Bringing <span class="text-gradient">Motion</span> to Life</h1>
+        <p class="hero-subtitle">Character Animation • Motion Graphics • VFX</p>
+        <a href="#work" class="cta-button">View Showreel</a>
+      </div>
+      <div class="hero-background">
+        <!-- Abstract CSS animation background -->
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+      </div>
+    </header>
+
+    <!-- Portfolio Grid -->
+    <section id="work" class="section work-section">
+      <h2 class="section-title">Selected Works</h2>
+      <div class="grid-container" id="portfolio-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="about-container">
+        <h2 class="section-title">Behind the Frame</h2>
+        <div class="about-content">
+          <p>I am a passionate animator dedicated to storytelling through motion. With a focus on fluid mechanics and emotive character acting, I create visuals that resonate.</p>
+          <ul class="skills-list">
+            <li>2D/3D Animation</li>
+            <li>After Effects</li>
+            <li>Blender / Maya</li>
+            <li>Storyboarding</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="footer">
+      <h2 class="footer-title">Let's Create Together</h2>
+      <a href="mailto:hello@example.com" class="email-link">hello@example.com</a>
+      <div class="socials">
+        
+        <a href="https://www.linkedin.com/in/sachu-suresh-37b3691b0">LinkedIn</a>
+      </div>
+      <p class="copyright">&copy; 2026 Animation Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Video Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="close-btn" id="lightbox-close">&times;</button>
+      <div class="lightbox-content">
+        <div class="video-wrapper" id="video-wrapper">
+          <!-- Video injected here -->
+        </div>
+        <div class="lightbox-details">
+          <h3 id="lightbox-title">Project Title</h3>
+          <p id="lightbox-desc">Project description goes here.</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./asset/main.js"></script>
+  </body>
+</html>
